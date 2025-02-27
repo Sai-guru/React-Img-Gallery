@@ -1,0 +1,93 @@
+.galleryWrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+  gap: 15px; /* Space between images */
+  align-items: center;
+  justify-content: center;
+  max-width: 800px; /* Adjust the gallery's overall width */
+  margin: 0 auto;
+}
+
+.galleryWrap .single {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure the images fit neatly within their container */
+  aspect-ratio: 1; /* Maintain square aspect ratio for each image */
+}
+
+.galleryWrap .single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill the container without distortion */
+  border-radius: 10px; /* Add rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.galleryWrap .single img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Rest of the styles remain unchanged */
+.sliderWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
+}
+
+.btnNext:hover, .btnPrev:hover, .btnClose:hover {
+  opacity: 1;
+}
+
+.sliderWrap .btnClose {
+  top: 40px;
+  right: 40px;
+}
+
+.sliderWrap .btnPrev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.sliderWrap .btnNext {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.fullScreenImage {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullScreenImage img {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
