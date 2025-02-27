@@ -1,33 +1,18 @@
-# React JS Image Gallery With Full Screen Modal
+# Image Gallery with Lightbox Feature
 
-React JS gallery by WebStylePress, that takes array of images and shows images thumbnails. On click of images full screen gallery appears and you can navigate through available images.
+This project is a simple **Image Gallery** with a **Lightbox Viewer** built using **React.js**. It allows users to view images in a modal, navigate through them using previous and next buttons, and close the modal when done. 
 
-## How to Use
+## 🌐 Live Demo
+🔗 **Check it out here:** [React Image Gallery](https://react-img-gallery-ten.vercel.app/)
 
-Clone or download repo
-NodeJS / NPM / Yarn should be installed in your PC
+## 📌 Features
+- 📸 Display a collection of images in a grid layout.
+- 🔍 Click on an image to open it in a full-screen lightbox.
+- ⬅️➡️ Navigate between images using left and right arrows.
+- ❌ Close the lightbox with a close button.
+- 📜 Extra page height to allow for smooth scrolling.
 
-Open terminal or Git for Windows (Git Bash)
-Run these commands:
-
-### Install Dependencies
-
-yarn install
-
-OR
-
-npm install
-
-### Run app
-
-yarn start
-
-OR
-
-npm start
-
-### YouTube Tutorial URL
-
-Title: Responsive Image Gallery in React JS | NO External Package | Plug & Play ReactJS Gallery
-
-to be updated
+## 🛠️ Technologies Used
+- **React.js** ⚛️
+- **CSS** 🎨
+- **FontAwesome** for icons 🚀
